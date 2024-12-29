@@ -1,0 +1,77 @@
+
+/* 전체 화면 중앙 정렬 */
+body {
+    margin: 0; /* 기본 여백 제거 */
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    min-height: 100vh; /* 화면 높이를 100% 채움 */
+}
+
+
+.screen {
+    position: relative;
+    width: 60%; /* 부모 요소의 너비의 60%로 설정 */
+    max-width: 1440px; /* 최대 너비는 1440px로 제한 */
+    height: auto;  /* 가로 세로 비율 유지 */
+}
+
+
+.screen-image {
+    width: 100%;
+    height: auto;  
+}
+
+
+.screen-button {
+    position: absolute;
+    cursor: pointer;    /* 클릭 가능 */ 
+}
+
+
+/* 각 버튼의 위치를 지정 */
+#button1 {
+    left: 100px; 
+    top: 300px;   
+}
+
+#button2 {
+    left: 100px;  
+    top: 450px;   
+}
+
+#button3 {
+    left: 100px; 
+    top: 600px;  
+}
+
+
+/* 돌아가기 버튼 (각 화면에서 돌아가기 버튼 이미지) */
+.back-button {
+    position: absolute;
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+#back-screen1 {
+    left: 700px; 
+    top: 820px;   
+}
+
+#back-screen2 {
+    left: 700px; 
+    top: 820px;   
+}
+
+#back-screen3 {
+    left: 700px; 
+    top: 820px;  
+}
+
+
+/* 화면 전환 시 숨겨지는 화면 */
+.hidden {
+    display: none;
+}
